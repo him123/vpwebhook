@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Flutter App</title>
+</head>
+<body>
+  <h1>Open the Flutter App</h1>
+  <p>Click the button below to open the app.</p>
+  <button onclick="openApp()">Open App</button>
+
+  <script>
+    function openApp() {
+      // Define the app link URL
+      const appLink = "https://www.example.com/openApp";  // Replace with your configured app link
+      const playStoreLink = "https://play.google.com/store/apps/details?id=com.example.yourapp"; // Replace with your app's Play Store URL
+
+      // Try to open the app link
+      window.location.href = appLink;
+
+      // Set a timeout to redirect to the Play Store if the app does not open
+      setTimeout(() => {
+        window.location.href = playStoreLink;
+      }, 2000); // Adjust the timeout if needed
+    }
+  </script>
+</body>
+</html>
