@@ -6,7 +6,7 @@
   <title>Open Flutter App</title>
 </head>
 <body onload="openApp()">  <!-- Call openApp() on page load -->
-  <h1>Open the Flutter App</h1>
+  
   
   <!-- Placeholder for the status message -->
   <p id="statusMessage">Working on your request...</p>
@@ -24,9 +24,9 @@
       window.location.href = appLink;
 
       // Optionally, uncomment the following code to add a fallback redirect if the app is not installed
-      // setTimeout(() => {
-      //   window.location.href = playStoreLink;
-      // }, 1000); // Adjust the timeout if needed
+      setTimeout(() => {
+        window.location.href = playStoreLink;
+      }, 1000); // Adjust the timeout if needed
     }
   </script>
 </body>
