@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.app.payangel",  // Replace with your app's package name
+      "sha256_cert_fingerprints": [
+        "37:F2:3A:E8:2C:91:68:BD:53:8E:97:64:D9:AD:6D:21:9D:61:DA:D3:4D:B1:40:70:99:08:68:31:A1:DB:F3:E7"  // Replace with your app’s SHA-256 fingerprint
+      ]
+    }
+  }
+]
