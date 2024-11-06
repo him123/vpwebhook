@@ -5,13 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Flutter App</title>
 </head>
-<body>
+<body onload="openApp()">  <!-- Call openApp() on page load -->
   <h1>Open the Flutter App</h1>
-  <p>Click the button below to open the app.</p>
-  <button onclick="openApp()">Open App</button>
+  
+  <!-- Placeholder for the status message -->
+  <p id="statusMessage">Working on your request...</p>
 
   <script>
     function openApp() {
+      // Display the "Working on your request..." message
+      document.getElementById("statusMessage").textContent = "Working on your request...";
+      
       // Define the app link URL
       const appLink = "https://payangel/openApp";  // Replace with your configured app link
       const playStoreLink = "https://play.google.com/store/apps/details?id=com.app.payangel"; // Replace with your app's Play Store URL
@@ -19,7 +23,7 @@
       // Try to open the app link
       window.location.href = appLink;
 
-      // Set a timeout to redirect to the Play Store if the app does not open
+      // Optionally, uncomment the following code to add a fallback redirect if the app is not installed
       // setTimeout(() => {
       //   window.location.href = playStoreLink;
       // }, 1000); // Adjust the timeout if needed
